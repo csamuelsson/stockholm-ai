@@ -13,6 +13,12 @@ collections:
   distilling-ais:
     output: true
     permalink: /:collection/:title
+  blogs:
+    output: true
+    permalink: /:collection/:title
+  posts:
+    output: true
+    permalink: /:collection/:title
   companies:
     output: true
     permalink: /:collection/:title
@@ -40,6 +46,11 @@ defaults:
       type: distilling-ais
     values:
       layout: distilling-ai
+  - scope:
+      path: ""
+      type: blogs
+    values:
+      layout: blog
   - scope:
       path: ""
       type: companies
